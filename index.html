@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HFT IPR JavaScript</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+	</head>
+	<!-- https://media.giphy.com/media/OvzMNfWETBoKQ/giphy.gif -->
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-size="cover" data-background-image="https://media.giphy.com/media/l46CbZ7KWEhN1oci4/giphy.gif">
+					<h1 class="title">IPR</h1>
+					<h3 class="title">JavaScript</h3>
+				</section>
+				<section>
+					<section>
+						<h2>Allgemeines</h2>
+						<ul>
+							<li>Kompakte Skriptsprache für interaktive Web- Dokumente</li>
+							<li>ISO/IEC ECMA-262 ugs. ECMAScript</li>
+							<li>Imperative Sprache mit objektorientierten Ansätzen</li>
+							<li>Klassenlose Sprache</li>
+							<li>Dynamisch typisiert</li>
+						</ul>
+					</section>
+					<section>
+						<h2>JS 👍</h2>
+						<ul>
+							<li>Struktur muss nicht bereits zur Compile-Zeit festgelegt werden</li>
+							<li>Objekte bleiben zur Laufzeit strukturell veränderbar</li>
+							<li>Zahllose Resourcen im Web</li>
+							<li>Serverseitig NodeJS</li>
+						</ul>
+
+						<!--<img src="http://www.nikola-breznjak.com/blog/wp-content/uploads/2014/10/scepticKid.jpg" />-->
+					</section>
+					<section>
+						<h2>JS 👎</h2>
+						<ul>
+							<li>Erst bei der ”Ausführung“ (im Browser) werden Fehler offensichtlich</li>
+							<li>Unterschiedliche JS-Implementierungen in Browsern</li>
+							<li>”Signal vs Noise“</li>
+							<li><a href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f" target="_blank">How it feels to learn JavaScript in 2016</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>JavaScript !== Java</h2>
+						<p>Allerdings gibt es Ähnlichkeiten</p>
+						<ul>
+							<li>Punktnotation</li>
+							<li>Methodennamen</li>
+							<li>Kontrollstrukturen</li>
+							<li>…</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						## JS einbinden
+						```
+						&lt;head&gt;
+						  &lt;script type="text/javascript"&gt;
+						    document.write("Dies ist JavaScript.");
+						  &lt;/script&gt;
+						&lt;/head&gt;
+						```
+						Oder als externe Datei:
+						```
+						&lt;head&gt;
+						  &lt;script src="test.js" type="text/javascript"&gt;
+						  &lt;/script&gt;
+						&lt;/head&gt;
+						```
+					</section>
+					<section>
+						<h2>Wie funktioniert JavaScript?</h2>
+						<ul>
+							<li>Der Code ist im Dokument einsehbar</li>
+							<li>Der Browser führt den Code aus -> JS Wird <strong>interpretiert</strong></li>
+							<li>Der Code kann im &lt;head&gt; und/oder &lt;body&gt; Segment stehen, auch an mehreren Stellen</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Für was wird JS verwendet?</h2>
+						<ul>
+							<li>Interaktionen</li>
+							<li>Dokumentmanipulation</li>
+							<li>Validierung von Formularwerten</li>
+							<li>Browsersteuerung</li>
+							<li>Bearbeitung von Cookies</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>JS Sprachelemente</h2>
+						<p data-height="398" data-theme-id="light" data-slug-hash="oeNvYp" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="oeNvYp" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/oeNvYp/">oeNvYp</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>JS Functions</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="brEVXb" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="brEVXb" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/brEVXb/">brEVXb</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>JS Statements</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="LjGGPm" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="LjGGPm" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/LjGGPm/">LjGGPm</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>JS Objects</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="JyGGdL" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="JyGGdL" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/JyGGdL/">JyGGdL</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>JS Constructors</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="Bdjjza" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="Bdjjza" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/Bdjjza/">Bdjjza</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>JS Prototypes</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="ZJQQBy" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="ZJQQBy" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/ZJQQBy/">ZJQQBy</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>JS Vererbung</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="XaXXMV" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="XaXXMV" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/XaXXMV/">XaXXMV</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>JS ES6 Klassen</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="dZPRdd" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="dZPRdd" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/dZPRdd/">dZPRdd</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>Error Handling</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="MvKKmo" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="MvKKmo" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/MvKKmo/">MvKKmo</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>Native Browser Objekte</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="Nvxxar" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="Nvxxar" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/Nvxxar/">Nvxxar</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Document Object Model</h2>
+						<ul>
+							<li>Alle Elemente einer HTML-Seite sind als Objekte zugreifbar</li>
+							<li>Diese sind hierarchisch geordnet: Objektbaum</li>
+							<li>Die Elemente sind per Namen oder Nummer ansprechbar</li>
+						</ul>
+					</section>
+					<section>
+						<img style="height: 500px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/1200px-DOM-model.svg.png" />
+					</section>
+					<section>
+						<img src="https://cdn.tutsplus.com/net/uploads/legacy/216_dom/img/traverse1.png" />
+					</section>
+					<section>
+						<h2>VanillaJS</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="xLZZPJ" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="xLZZPJ" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/xLZZPJ/">xLZZPJ</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>jQuery</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="vJLLWw" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="vJLLWw" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/vJLLWw/">vJLLWw</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Events
+						```
+						onAbort:	Laden der Grafiken wird abgebrochen
+						onBlur:	Eingabefokus wurde entzogen
+						onChange:	Text eines Elements wurde geändert
+						onClick:	Mausklick
+						onDblClick:	Mausdoppelclick
+						onError:	Fehler ist aufgetreten
+						onFocus:	Eingabefokus wird auf Element gesetzt
+						onKeydown:	Taste wird gedrückt
+						onKeypress:	Tastendruck
+						onKeyup:	Taste wird gelöst
+						onLoad:	Dokument wird geladen
+						onMousedown:	Maustaste wird gedrückt
+						onMousemove:	Wenn die Maus weiterbewegt wird
+						onMouseout:	Beim Verlassen des Elements
+						onMouseover:	Maus wird über Element bewegt
+						onMouseup:	Maustaste wird losgelassen
+						onResize:	Fenstergröße wird geändert
+						onSelect:	Text wird ausgewählt
+						onSubmit:	Formular wird versendet
+						onUnload:	Dokument wird geschlossen
+						```
+					</section>
+					<section>
+						<h2>Embedded & Extern</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="JyGGzx" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="JyGGzx" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/JyGGzx/">JyGGzx</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Daten auf dem Client speichern
+
+						- Cookies
+						- LocalStorage
+						- SessionStorage
+					</section>
+					<section>
+						<h2>Cookies</h2>
+						Kann vom Client und vom Server gesetzt werden.
+						<p data-height="265" data-theme-id="light" data-slug-hash="YxwqVq" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="YxwqVq" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/YxwqVq/">YxwqVq</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>LocalStorage & SessionStorage</h2>
+						Ausschließlich via Browser!
+						<p data-height="265" data-theme-id="light" data-slug-hash="zdrqwX" data-default-tab="js,result" data-user="maciossek" data-embed-version="2" data-pen-title="zdrqwX" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/zdrqwX/">zdrqwX</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Übung</h2>
+							<ul>
+								<li>Legen Sie auf dem Server ein neues Verzeichnis an: <code class="hljs">~/public_html/JS/</code></li>
+								<li>S. Tutorial <a href="http://holdirbootstrap.de/javascript/" target="_blank">http://holdirbootstrap.de/javascript/</a></li>
+								<li>Bauen Sie ein Modal für Fehlermeldungen ein (modal.js)</li>
+								<li>Mindestens 3 Bilder in einem Karussell (carousel.js)</li>
+								<li>Implementieren sie einen Counter, der die Seitenbesuche eines Clients zählt.</li>
+							</ul>
+					</section>
+					<section>
+						<h2>Weitere Links</h2>
+						<ul>
+							<li><a href="https://www.sitepoint.com/anatomy-of-a-modern-javascript-application/" target="_blank">The Anatomy of a Modern JavaScript Application</a></li>
+							<li><a href="https://medium.com/@kentcdodds/classes-complexity-and-functional-programming-a8dd86903747" target="_blank">Classes, Complexity, and Functional Programming</a></li>
+							<li><a href="https://jquery.com/" target="_blank">https://jquery.com/</a></li>
+							<li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+							<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank">Mozilla Tutorial</a></li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				backgroundTransition: 'slide',
+	      slideNumber: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
+transition
